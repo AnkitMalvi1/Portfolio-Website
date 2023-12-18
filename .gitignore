@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# additional
+/src/firebase.js
+/src/assets/data.json
+/src/assets/img1.png

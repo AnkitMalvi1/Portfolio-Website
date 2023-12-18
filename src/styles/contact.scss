@@ -1,0 +1,68 @@
+#contact{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+    > section{
+        background-color: $primary;
+        width: 100%;
+        height: 100%;
+        
+
+        > form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            > h2{
+                text-align: center;
+                font: 100 2.7rem $text2;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                margin: 2rem;
+            }
+
+            > input, > button{
+                padding: 0.8rem;
+                width: 40%;
+                outline: none;
+                font: 400 0.9rem $text1;
+                margin: 1rem;
+                border: none;
+            }
+
+            > button{
+                cursor: pointer;
+                background-color: $bg;
+                color: $onsecondary;
+                font: 600 1rem $text1;
+                text-transform: uppercase;
+                margin: 3rem;
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                &:hover{
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+
+    >aside{
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        display: grid;
+        place-items: center;
+
+        > img{
+            width: 70%;
+            height: 70%;
+            // background-color: $primary;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.675));
+            animation: upupdowndown 0.7s infinite linear alternate;
+        }
+    }
+}
